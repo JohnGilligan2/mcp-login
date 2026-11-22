@@ -1,0 +1,20 @@
+{
+  "_comment": "Copy to clients.json. One entry per MCP server: the name customers see, its OAuth callback, and exactly who may sign in. Emails are exact and lower-case; allow_domains admits a whole domain, so use it deliberately. No secrets here: each client's secret goes in MCP_LOGIN_CLIENT_SECRETS.",
+  "clients": {
+    "demo-info-mcp": {
+      "name": "Example Movers",
+      "redirect_uris": ["https://demo-mcp.example.com/auth/callback"],
+      "allow": [
+        "dispatcher@customer.example",
+        "owner@customer.example"
+      ],
+      "allow_domains": []
+    },
+    "acme-reports-mcp": {
+      "name": "Acme Reports",
+      "redirect_uris": ["https://reports-mcp.example.com/auth/callback"],
+      "allow": ["analyst@example.com"],
+      "allow_domains": ["acme.example"]
+    }
+  }
+}

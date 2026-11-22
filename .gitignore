@@ -1,0 +1,12 @@
+.env
+*.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.sqlite3*
+*.pem
+audit.jsonl
+
+# Your real access list. Keep it in a private fork, or mount it at run time.
+clients.json
